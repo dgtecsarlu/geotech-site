@@ -1,0 +1,22 @@
+<svg width="240" height="48" viewBox="0 0 240 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GEOTECH">
+  <defs>
+    <linearGradient id="gtGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2ad4ff"/>
+      <stop offset="0.5" stop-color="#4d6bff"/>
+      <stop offset="1" stop-color="#9b6bff"/>
+    </linearGradient>
+  </defs>
+  <!-- Mark : noeud de reseau / globe stylise -->
+  <g transform="translate(4 4)">
+    <circle cx="20" cy="20" r="19" fill="none" stroke="url(#gtGrad)" stroke-width="2"/>
+    <circle cx="20" cy="20" r="4.5" fill="url(#gtGrad)"/>
+    <circle cx="20" cy="3.5" r="3" fill="#2ad4ff"/>
+    <circle cx="34.7" cy="28.5" r="3" fill="#4d6bff"/>
+    <circle cx="5.3" cy="28.5" r="3" fill="#9b6bff"/>
+    <path d="M20 20 L20 3.5 M20 20 L34.7 28.5 M20 20 L5.3 28.5" stroke="url(#gtGrad)" stroke-width="1.6" opacity="0.7"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="54" y="32" font-family="'Space Grotesk', sans-serif" font-size="24" font-weight="700" letter-spacing="0.5">
+    <tspan fill="#e8edf7">GEO</tspan><tspan fill="url(#gtGrad)">TECH</tspan>
+  </text>
+</svg>
