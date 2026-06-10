@@ -155,7 +155,7 @@
 
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(42, 212, 255, 0.55)';
+      ctx.fillStyle = 'rgba(52, 169, 224, 0.55)';
       ctx.fill();
 
       for (var j = i + 1; j < particles.length; j++) {
@@ -166,8 +166,8 @@
           ctx.beginPath();
           ctx.moveTo(p.x, p.y);
           ctx.lineTo(q.x, q.y);
-          var alpha = (1 - d / linkDist) * 0.18;
-          ctx.strokeStyle = 'rgba(77, 107, 255, ' + alpha + ')';
+          var alpha = (1 - d / linkDist) * 0.16;
+          ctx.strokeStyle = 'rgba(247, 148, 30, ' + alpha + ')';
           ctx.lineWidth = dpr;
           ctx.stroke();
         }
