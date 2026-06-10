@@ -91,7 +91,7 @@
     // Ouvre le client mail avec le message pré-rempli (remplacez l'adresse).
     var subject = encodeURIComponent('Demande de devis — ' + form.subject.value);
     var body = encodeURIComponent('Nom : ' + name + '\nEmail : ' + email + '\n\n' + message);
-    window.location.href = 'mailto:contact@geotech-tec.com?subject=' + subject + '&body=' + body;
+    window.location.href = 'mailto:dg.gtec.sarlu@outlook.com?subject=' + subject + '&body=' + body;
     status.textContent = 'Merci ' + name + ' ! Votre logiciel de messagerie va s’ouvrir pour finaliser l’envoi.';
     status.className = 'form__status ok';
     form.reset();
