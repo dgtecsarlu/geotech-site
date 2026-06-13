@@ -125,6 +125,11 @@ h1, h2, h3, .brand__name { font-family: 'Space Grotesk', sans-serif; line-height
 .checklist { list-style: none; margin: 26px 0 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .checklist li { padding-left: 32px; position: relative; color: var(--text); font-size: .96rem; }
 .checklist li::before { content: '✓'; position: absolute; left: 0; top: 1px; width: 22px; height: 22px; border-radius: 50%; background: var(--grad); color: #06223a; font-size: .8rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.formation__modules { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+.formation__modules li { position: relative; padding-left: 22px; color: var(--muted); font-size: .92rem; line-height: 1.45; }
+.formation__modules li::before { content: '▹'; position: absolute; left: 0; top: 0; color: var(--azure); }
+.formation__modules strong { display: block; color: var(--text); font-weight: 600; margin-bottom: 2px; }
+.section__cta { text-align: center; margin-top: 42px; }
 .formations__visual { position: relative; height: 340px; display: flex; align-items: center; justify-content: center; }
 .orb { width: 130px; height: 130px; border-radius: 50%; background: var(--grad); filter: blur(2px); box-shadow: 0 0 80px 10px rgba(247,148,30,.45); animation: float 5s ease-in-out infinite; }
 .orbit { position: absolute; width: 240px; height: 240px; border: 1px solid rgba(52,169,224,.35); border-radius: 50%; animation: spin 14s linear infinite; }
