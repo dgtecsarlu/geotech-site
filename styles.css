@@ -162,6 +162,7 @@ h1, h2, h3, .brand__name { font-family: 'Space Grotesk', sans-serif; line-height
 .footer__legal { color: var(--muted); font-size: .82rem; line-height: 1.8; max-width: 300px; }
 .footer__legal strong { color: var(--text); }
 .footer__copy { width: 100%; text-align: center; color: var(--muted); font-size: .82rem; padding-top: 24px; margin-top: 30px; border-top: 1px solid var(--border); }
+.footer__webmaster { display: inline-block; margin-top: 8px; color: var(--azure); font-size: .8rem; }
 
 /* ===== REVEAL ===== */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
