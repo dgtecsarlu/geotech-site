@@ -129,6 +129,8 @@ h1, h2, h3, .brand__name { font-family: 'Space Grotesk', sans-serif; line-height
 .formation__modules li { position: relative; padding-left: 22px; color: var(--muted); font-size: .92rem; line-height: 1.45; }
 .formation__modules li::before { content: '▹'; position: absolute; left: 0; top: 0; color: var(--azure); }
 .formation__modules strong { display: block; color: var(--text); font-weight: 600; margin-bottom: 2px; }
+.formation__meta { display: block; margin-top: 7px; font-size: .76rem; color: var(--azure); }
+.formation__meta b { color: var(--orange); font-weight: 700; }
 .section__cta { text-align: center; margin-top: 42px; }
 .formations__visual { position: relative; height: 340px; display: flex; align-items: center; justify-content: center; }
 .orb { width: 130px; height: 130px; border-radius: 50%; background: var(--grad); filter: blur(2px); box-shadow: 0 0 80px 10px rgba(247,148,30,.45); animation: float 5s ease-in-out infinite; }
