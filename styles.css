@@ -213,3 +213,62 @@ h1, h2, h3, .brand__name { font-family: 'Space Grotesk', sans-serif; line-height
   .project { flex-wrap: wrap; gap: 14px; }
   .project__tag { margin-left: 0; }
 }
+
+/* ============================================================
+   POLISH PROFESSIONNEL
+   ============================================================ */
+html { scroll-padding-top: 84px; }
+::selection { background: rgba(247, 148, 30, .35); color: #fff; }
+:focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; border-radius: 5px; }
+img { -webkit-user-drag: none; }
+
+/* Barre de progression de lecture */
+#progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; z-index: 200; background: var(--grad); box-shadow: 0 0 12px rgba(247,148,30,.5); transition: width .12s linear; }
+
+/* Hero : halo lumineux subtil pour la profondeur */
+.hero::before {
+  content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(58% 48% at 50% 28%, rgba(52, 169, 224, .16), transparent 70%),
+    radial-gradient(42% 42% at 76% 62%, rgba(247, 148, 30, .12), transparent 70%);
+}
+
+/* Trait dégradé sous les titres de section */
+.section__head .section__title::after {
+  content: ''; display: block; width: 66px; height: 4px; margin: 18px auto 0;
+  border-radius: 999px; background: var(--grad);
+}
+.formations .section__title::after, .contact__intro .section__title::after { margin-left: 0; margin-right: auto; }
+
+/* Cartes & panneaux : ombres douces et hover affiné */
+.card, .vision__item, .project, .contact__form, .gallery figure, .dg__photo img {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .03), 0 18px 44px -30px rgba(0, 0, 0, .85);
+}
+.card:hover { box-shadow: 0 28px 64px -28px rgba(247, 148, 30, .38); }
+.vision__item { transition: transform .3s, border-color .3s, box-shadow .3s; }
+.vision__item:hover { transform: translateY(-5px); border-color: rgba(52,169,224,.4); }
+
+/* Menu : soulignement animé au survol */
+.nav__links a:not(.nav__cta) { position: relative; }
+.nav__links a:not(.nav__cta)::after {
+  content: ''; position: absolute; left: 0; bottom: -5px; height: 2px; width: 0;
+  background: var(--grad); border-radius: 999px; transition: width .25s ease;
+}
+.nav__links a:not(.nav__cta):hover::after { width: 100%; }
+
+/* Images nettes et homogènes */
+.gallery img, .dg__photo img { object-fit: cover; }
+
+/* CTA : léger reflet au survol */
+.btn--primary { position: relative; overflow: hidden; }
+.btn--primary::after {
+  content: ''; position: absolute; top: 0; left: -120%; width: 60%; height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,.35), transparent);
+  transform: skewX(-20deg); transition: left .6s ease;
+}
+.btn--primary:hover::after { left: 130%; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+  html { scroll-behavior: auto; }
+}

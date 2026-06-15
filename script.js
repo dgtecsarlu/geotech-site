@@ -8,9 +8,14 @@
 
   /* --- Nav : fond au scroll --- */
   var nav = document.getElementById('nav');
+  var progress = document.getElementById('progress');
   function onScroll() {
     if (window.scrollY > 30) nav.classList.add('scrolled');
     else nav.classList.remove('scrolled');
+    if (progress) {
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      progress.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + '%';
+    }
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
