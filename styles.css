@@ -99,6 +99,8 @@ h1, h2, h3, .brand__name { font-family: 'Space Grotesk', sans-serif; line-height
 .project h3 { font-size: 1.18rem; margin-bottom: 6px; }
 .project p { color: var(--muted); font-size: .96rem; }
 .project__tag { margin-left: auto; white-space: nowrap; font-size: .8rem; padding: 7px 14px; border-radius: 999px; background: rgba(52,169,224,.14); color: var(--azure); border: 1px solid rgba(52,169,224,.3); }
+.project__link { display: inline-flex; align-items: center; gap: 7px; margin-top: 12px; font-size: .9rem; font-weight: 600; color: var(--azure); text-decoration: none; transition: gap .2s, filter .2s; }
+.project__link:hover { gap: 11px; filter: brightness(1.25); }
 
 /* ===== VISION ===== */
 .vision { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; margin-bottom: 50px; }
